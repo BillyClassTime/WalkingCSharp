@@ -1,4 +1,4 @@
-﻿using System;
+﻿using static System.Console;
 
 // initialize variables - graded assignments 
 int currentAssignments = 5;
@@ -14,7 +14,7 @@ string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
 int[] studentScores = new int[10];
 
 // Write the Report Header to the console
-Console.WriteLine("Student\t\tGrade\n");
+WriteLine("Student\t\tGrade\n");
 
 foreach (string name in studentNames)
 {
@@ -46,5 +46,5 @@ foreach (string name in studentNames)
 
     currentStudentGrade = (decimal)(sumAssignmentScores) / currentAssignments;
 
-    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
+    WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
 }
